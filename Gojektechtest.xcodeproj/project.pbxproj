@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E089073232D180100B82F82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E089072232D180100B82F82 /* AppDelegate.swift */; };
+		9E089075232D180100B82F82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E089074232D180100B82F82 /* ViewController.swift */; };
+		9E089078232D180100B82F82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E089076232D180100B82F82 /* Main.storyboard */; };
+		9E08907A232D180200B82F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E089079232D180200B82F82 /* Assets.xcassets */; };
+		9E08907D232D180200B82F82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E08907B232D180200B82F82 /* LaunchScreen.storyboard */; };
+		9E089088232D180200B82F82 /* GojektechtestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E089087232D180200B82F82 /* GojektechtestTests.swift */; };
+		9E089093232D180200B82F82 /* GojektechtestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E089092232D180200B82F82 /* GojektechtestUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E089084232D180200B82F82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E089067232D180100B82F82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E08906E232D180100B82F82;
+			remoteInfo = Gojektechtest;
+		};
+		9E08908F232D180200B82F82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E089067232D180100B82F82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E08906E232D180100B82F82;
+			remoteInfo = Gojektechtest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E08906F232D180100B82F82 /* Gojektechtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gojektechtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E089072232D180100B82F82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E089074232D180100B82F82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E089077232D180100B82F82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E089079232D180200B82F82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E08907C232D180200B82F82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E08907E232D180200B82F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E089083232D180200B82F82 /* GojektechtestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GojektechtestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E089087232D180200B82F82 /* GojektechtestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GojektechtestTests.swift; sourceTree = "<group>"; };
+		9E089089232D180200B82F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E08908E232D180200B82F82 /* GojektechtestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GojektechtestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E089092232D180200B82F82 /* GojektechtestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GojektechtestUITests.swift; sourceTree = "<group>"; };
+		9E089094232D180200B82F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E08906C232D180100B82F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E089080232D180200B82F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E08908B232D180200B82F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E089066232D180100B82F82 = {
+			isa = PBXGroup;
+			children = (
+				9E089071232D180100B82F82 /* Gojektechtest */,
+				9E089086232D180200B82F82 /* GojektechtestTests */,
+				9E089091232D180200B82F82 /* GojektechtestUITests */,
+				9E089070232D180100B82F82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E089070232D180100B82F82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E08906F232D180100B82F82 /* Gojektechtest.app */,
+				9E089083232D180200B82F82 /* GojektechtestTests.xctest */,
+				9E08908E232D180200B82F82 /* GojektechtestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E089071232D180100B82F82 /* Gojektechtest */ = {
+			isa = PBXGroup;
+			children = (
+				9E089072232D180100B82F82 /* AppDelegate.swift */,
+				9E089074232D180100B82F82 /* ViewController.swift */,
+				9E089076232D180100B82F82 /* Main.storyboard */,
+				9E089079232D180200B82F82 /* Assets.xcassets */,
+				9E08907B232D180200B82F82 /* LaunchScreen.storyboard */,
+				9E08907E232D180200B82F82 /* Info.plist */,
+			);
+			path = Gojektechtest;
+			sourceTree = "<group>";
+		};
+		9E089086232D180200B82F82 /* GojektechtestTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E089087232D180200B82F82 /* GojektechtestTests.swift */,
+				9E089089232D180200B82F82 /* Info.plist */,
+			);
+			path = GojektechtestTests;
+			sourceTree = "<group>";
+		};
+		9E089091232D180200B82F82 /* GojektechtestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9E089092232D180200B82F82 /* GojektechtestUITests.swift */,
+				9E089094232D180200B82F82 /* Info.plist */,
+			);
+			path = GojektechtestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E08906E232D180100B82F82 /* Gojektechtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E089097232D180200B82F82 /* Build configuration list for PBXNativeTarget "Gojektechtest" */;
+			buildPhases = (
+				9E08906B232D180100B82F82 /* Sources */,
+				9E08906C232D180100B82F82 /* Frameworks */,
+				9E08906D232D180100B82F82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gojektechtest;
+			productName = Gojektechtest;
+			productReference = 9E08906F232D180100B82F82 /* Gojektechtest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E089082232D180200B82F82 /* GojektechtestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E08909A232D180200B82F82 /* Build configuration list for PBXNativeTarget "GojektechtestTests" */;
+			buildPhases = (
+				9E08907F232D180200B82F82 /* Sources */,
+				9E089080232D180200B82F82 /* Frameworks */,
+				9E089081232D180200B82F82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E089085232D180200B82F82 /* PBXTargetDependency */,
+			);
+			name = GojektechtestTests;
+			productName = GojektechtestTests;
+			productReference = 9E089083232D180200B82F82 /* GojektechtestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9E08908D232D180200B82F82 /* GojektechtestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E08909D232D180200B82F82 /* Build configuration list for PBXNativeTarget "GojektechtestUITests" */;
+			buildPhases = (
+				9E08908A232D180200B82F82 /* Sources */,
+				9E08908B232D180200B82F82 /* Frameworks */,
+				9E08908C232D180200B82F82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E089090232D180200B82F82 /* PBXTargetDependency */,
+			);
+			name = GojektechtestUITests;
+			productName = GojektechtestUITests;
+			productReference = 9E08908E232D180200B82F82 /* GojektechtestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E089067232D180100B82F82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Ernando Kasaluhe";
+				TargetAttributes = {
+					9E08906E232D180100B82F82 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					9E089082232D180200B82F82 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 9E08906E232D180100B82F82;
+					};
+					9E08908D232D180200B82F82 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 9E08906E232D180100B82F82;
+					};
+				};
+			};
+			buildConfigurationList = 9E08906A232D180100B82F82 /* Build configuration list for PBXProject "Gojektechtest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E089066232D180100B82F82;
+			productRefGroup = 9E089070232D180100B82F82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E08906E232D180100B82F82 /* Gojektechtest */,
+				9E089082232D180200B82F82 /* GojektechtestTests */,
+				9E08908D232D180200B82F82 /* GojektechtestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E08906D232D180100B82F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E08907D232D180200B82F82 /* LaunchScreen.storyboard in Resources */,
+				9E08907A232D180200B82F82 /* Assets.xcassets in Resources */,
+				9E089078232D180100B82F82 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E089081232D180200B82F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E08908C232D180200B82F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E08906B232D180100B82F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E089075232D180100B82F82 /* ViewController.swift in Sources */,
+				9E089073232D180100B82F82 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E08907F232D180200B82F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E089088232D180200B82F82 /* GojektechtestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E08908A232D180200B82F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E089093232D180200B82F82 /* GojektechtestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E089085232D180200B82F82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E08906E232D180100B82F82 /* Gojektechtest */;
+			targetProxy = 9E089084232D180200B82F82 /* PBXContainerItemProxy */;
+		};
+		9E089090232D180200B82F82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E08906E232D180100B82F82 /* Gojektechtest */;
+			targetProxy = 9E08908F232D180200B82F82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E089076232D180100B82F82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E089077232D180100B82F82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E08907B232D180200B82F82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E08907C232D180200B82F82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E089095232D180200B82F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E089096232D180200B82F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E089098232D180200B82F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gojektechtest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojektechtest.Gojektechtest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E089099232D180200B82F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gojektechtest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojektechtest.Gojektechtest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9E08909B232D180200B82F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GojektechtestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojektechtest.GojektechtestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gojektechtest.app/Gojektechtest";
+			};
+			name = Debug;
+		};
+		9E08909C232D180200B82F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GojektechtestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojektechtest.GojektechtestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gojektechtest.app/Gojektechtest";
+			};
+			name = Release;
+		};
+		9E08909E232D180200B82F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GojektechtestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojektechtest.GojektechtestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gojektechtest;
+			};
+			name = Debug;
+		};
+		9E08909F232D180200B82F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GojektechtestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojektechtest.GojektechtestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gojektechtest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E08906A232D180100B82F82 /* Build configuration list for PBXProject "Gojektechtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E089095232D180200B82F82 /* Debug */,
+				9E089096232D180200B82F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E089097232D180200B82F82 /* Build configuration list for PBXNativeTarget "Gojektechtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E089098232D180200B82F82 /* Debug */,
+				9E089099232D180200B82F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E08909A232D180200B82F82 /* Build configuration list for PBXNativeTarget "GojektechtestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E08909B232D180200B82F82 /* Debug */,
+				9E08909C232D180200B82F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E08909D232D180200B82F82 /* Build configuration list for PBXNativeTarget "GojektechtestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E08909E232D180200B82F82 /* Debug */,
+				9E08909F232D180200B82F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E089067232D180100B82F82 /* Project object */;
+}
