@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    var list: [Contact] = []
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -19,6 +20,11 @@ class HomeViewController: UIViewController {
         setupViewContent()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        requestListContact()
+    }
 }
 
 //MARK: - Setup View
@@ -40,6 +46,26 @@ extension HomeViewController {
     }
 }
 
+//MARK: - Request
+extension HomeViewController {
+    func requestListContact() {
+        
+        ListContact.getList() { result in
+        
+            switch result {
+                
+            case .success(let response):
+                
+                self.list = response.list
+                self.tableView.reloadData()
+            case .failure(let failed):
+                
+                print(print(failed.localizedDescription))
+            }
+        }
+    }
+}
+
 //MARK: - TableView Delegate & DataSource
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -50,7 +76,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 20
+        return list.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -62,13 +88,18 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "listCell", for: indexPath) as? ListContactTableViewCell
         
+        let data = list[indexPath.row]
+        cell?.configureCell(with: data)
+        
         return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let data = list[indexPath.row]
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "detailVC") as? DetailContactViewController
+        vc?.contactId = data.id
         self.navigationController?.pushViewController(vc!, animated: true)
         
         tableView.deselectRow(at: indexPath, animated: true)

@@ -13,21 +13,21 @@ class DetailContactTableViewCell: UITableViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelValue: UILabel!
     
-    func configureCell(with row: Int) {
+    func configureCell(with data: Contact, row: Int) {
         
-        setupContentInRow(row: row)
+        setupContentInRow(row: row, data: data)
     }
     
-    func setupContentInRow(row: Int) {
+    func setupContentInRow(row: Int, data: Contact) {
         
         switch row {
             
         case 1:
             labelTitle.text = "Mobile"
-            labelValue.text = "+917868765643"
+            labelValue.text = data.phoneNumber
         case 2:
             labelTitle.text = "Email"
-            labelValue.text = "polly.rich@gmail.com"
+            labelValue.text = data.email
         default:
             print("Default")
         }

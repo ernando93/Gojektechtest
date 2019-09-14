@@ -10,7 +10,10 @@ import UIKit
 
 class DetailContactViewController: UIViewController {
 
+    var contact: Contact?
     @IBOutlet weak var tableView: UITableView!
+    
+    var contactId: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,8 @@ class DetailContactViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
+        
+        requestDetailContact(with: contactId)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -49,6 +54,26 @@ extension DetailContactViewController {
         tableView.dataSource = self
         
         tableView.tableFooterView = UIView()
+    }
+}
+
+//MARK: - Request
+extension DetailContactViewController {
+    func requestDetailContact(with id: Int) {
+        
+        Contact.getDetails(withId: id) { result in
+            
+            switch result {
+                
+            case .success(let response):
+                
+                self.contact = response
+                self.tableView.reloadData()
+            case .failure(let error):
+                
+                print(error)
+            }
+        }
     }
 }
 
@@ -83,14 +108,18 @@ extension DetailContactViewController: UITableViewDelegate, UITableViewDataSourc
             let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as? DetailHeaderTableViewCell
             
             cell?.separatorInset = .zero
-            cell?.configureCell()
+            if contact != nil {
+                cell?.configureCell(with: contact!)
+            }
             
             return cell ?? UITableViewCell()
         } else {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "contactCells", for: indexPath) as? DetailContactTableViewCell
             
-            cell?.configureCell(with: indexPath.row)
+            if contact != nil {
+                cell?.configureCell(with: contact!, row: indexPath.row)
+            }
             
             return cell ?? UITableViewCell()
         }

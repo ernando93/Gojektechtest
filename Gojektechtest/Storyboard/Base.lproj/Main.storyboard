@@ -130,8 +130,8 @@
                                                         <constraint firstAttribute="width" constant="2" id="zeM-7y-ZS3"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polly Richardson" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYx-Ci-PxG">
-                                                    <rect key="frame" x="45" y="149" width="324" height="21.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYx-Ci-PxG">
+                                                    <rect key="frame" x="45" y="149" width="324" height="0.0"/>
                                                     <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="18"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -172,6 +172,11 @@
                                                 <constraint firstItem="eDv-OL-RzU" firstAttribute="centerY" secondItem="CmY-1p-XlH" secondAttribute="centerY" id="tg7-uw-GXm"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="favouriteButton" destination="eDv-OL-RzU" id="8G0-oh-a3J"/>
+                                            <outlet property="imageProfile" destination="J4G-dW-MhF" id="ikl-PC-t6X"/>
+                                            <outlet property="labelName" destination="JYx-Ci-PxG" id="J0Q-wT-V65"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="contactCells" rowHeight="56" id="u85-lb-ZwX" customClass="DetailContactTableViewCell" customModule="Gojektechtest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="328" width="414" height="56"/>
