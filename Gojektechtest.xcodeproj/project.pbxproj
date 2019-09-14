@@ -31,6 +31,9 @@
 		9EAABB30232D62500006E572 /* EditHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB2F232D62500006E572 /* EditHeaderTableViewCell.swift */; };
 		9EAABB37232D69FC0006E572 /* DetailContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB36232D69FC0006E572 /* DetailContactTableViewCell.swift */; };
 		9EAABB39232D6CAC0006E572 /* EditContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB38232D6CAC0006E572 /* EditContactTableViewCell.swift */; };
+		9EAABB43232D6FD80006E572 /* SingleDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB3C232D6FD80006E572 /* SingleDataResponse.swift */; };
+		9EAABB44232D6FD80006E572 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB3D232D6FD80006E572 /* Response.swift */; };
+		9EAABB45232D6FD80006E572 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB3E232D6FD80006E572 /* Request.swift */; };
 		A771479C06AB31CDE759856F /* Pods_Gojektechtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875DC822F7701DEF136BAA58 /* Pods_Gojektechtest.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +88,9 @@
 		9EAABB2F232D62500006E572 /* EditHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		9EAABB36232D69FC0006E572 /* DetailContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactTableViewCell.swift; sourceTree = "<group>"; };
 		9EAABB38232D6CAC0006E572 /* EditContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactTableViewCell.swift; sourceTree = "<group>"; };
+		9EAABB3C232D6FD80006E572 /* SingleDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleDataResponse.swift; sourceTree = "<group>"; };
+		9EAABB3D232D6FD80006E572 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		9EAABB3E232D6FD80006E572 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		B37E36CD19831E2F51B41F60 /* Pods-GojektechtestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GojektechtestUITests.release.xcconfig"; path = "Target Support Files/Pods-GojektechtestUITests/Pods-GojektechtestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D56C31B928CBD160EAA8418E /* Pods-Gojektechtest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gojektechtest.release.xcconfig"; path = "Target Support Files/Pods-Gojektechtest/Pods-Gojektechtest.release.xcconfig"; sourceTree = "<group>"; };
 		E6AE6E619B87FC219A553C73 /* Pods-GojektechtestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GojektechtestUITests.debug.xcconfig"; path = "Target Support Files/Pods-GojektechtestUITests/Pods-GojektechtestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,12 +173,13 @@
 		9E089071232D180100B82F82 /* Gojektechtest */ = {
 			isa = PBXGroup;
 			children = (
-				9EAABB2A232D5C610006E572 /* Utils */,
+				9EAABB3A232D6FD80006E572 /* Networking */,
 				9E0890EC232D513C00B82F82 /* Models */,
-				9E0890EB232D50CC00B82F82 /* Storyboard */,
 				9E0890D8232D2DD400B82F82 /* ViewCells */,
 				9E0890D1232D26BD00B82F82 /* ViewControllers */,
+				9E0890EB232D50CC00B82F82 /* Storyboard */,
 				9E0890A0232D217B00B82F82 /* Font */,
+				9EAABB2A232D5C610006E572 /* Utils */,
 				9E089072232D180100B82F82 /* AppDelegate.swift */,
 				9E089079232D180200B82F82 /* Assets.xcassets */,
 				9E08907B232D180200B82F82 /* LaunchScreen.storyboard */,
@@ -280,6 +287,32 @@
 				9EAABB2B232D5CB70006E572 /* Extension.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		9EAABB3A232D6FD80006E572 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9EAABB3B232D6FD80006E572 /* Response */,
+				9EAABB3D232D6FD80006E572 /* Response.swift */,
+				9EAABB3E232D6FD80006E572 /* Request.swift */,
+				9EAABB3F232D6FD80006E572 /* Request */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9EAABB3B232D6FD80006E572 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				9EAABB3C232D6FD80006E572 /* SingleDataResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		9EAABB3F232D6FD80006E572 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,12 +551,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EAABB30232D62500006E572 /* EditHeaderTableViewCell.swift in Sources */,
+				9EAABB45232D6FD80006E572 /* Request.swift in Sources */,
 				9EAABB2C232D5CB70006E572 /* Extension.swift in Sources */,
 				9E0890DF232D2ED700B82F82 /* DetailHeaderTableViewCell.swift in Sources */,
 				9E0890D3232D270600B82F82 /* DetailContactViewController.swift in Sources */,
+				9EAABB44232D6FD80006E572 /* Response.swift in Sources */,
 				9E0890E7232D48BE00B82F82 /* ListContactTableViewCell.swift in Sources */,
 				9E0890EA232D4A3E00B82F82 /* HomeViewController.swift in Sources */,
 				9E089073232D180100B82F82 /* AppDelegate.swift in Sources */,
+				9EAABB43232D6FD80006E572 /* SingleDataResponse.swift in Sources */,
 				9EAABB37232D69FC0006E572 /* DetailContactTableViewCell.swift in Sources */,
 				9E0890D7232D273300B82F82 /* EditContactViewController.swift in Sources */,
 				9EAABB39232D6CAC0006E572 /* EditContactTableViewCell.swift in Sources */,

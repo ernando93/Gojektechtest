@@ -63,6 +63,7 @@ extension EditContactViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "editHeaderCell", for: indexPath) as? EditHeaderTableViewCell
             
             cell?.separatorInset = .zero
@@ -70,6 +71,7 @@ extension EditContactViewController: UITableViewDelegate, UITableViewDataSource 
             
             return cell ?? UITableViewCell()
         } else {
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "editContactCells", for: indexPath) as? EditContactTableViewCell
             
             cell?.configureCell(with: indexPath.row)
