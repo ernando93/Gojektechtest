@@ -1,23 +1,18 @@
 //
-//  DetailHeaderTableViewCell.swift
+//  Extension.swift
 //  Gojektechtest
 //
-//  Created by Ernando Kasaluhe on 14/09/19.
+//  Created by Ernando Kasaluhe on 15/09/19.
 //  Copyright © 2019 Ernando Kasaluhe. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class DetailHeaderTableViewCell: UITableViewCell {
+extension UIView {
     
-    var gradientLayer: CAGradientLayer!
-
-    func configureCell() {
-        let greenColor = UIColor(red: 216.0/255.0, green: 245.0/255.0, blue: 239.0/255.0, alpha: 1.0)
-        setGradientBackground(colorTop: .white, colorBottom: greenColor)
-    }
-    
-    func setGradientBackground(colorTop: UIColor, colorBottom: UIColor) {
+    public func setGradientBackground(colorTop: UIColor, colorBottom: UIColor) {
+        
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [colorBottom.cgColor, colorTop.cgColor]
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.5)

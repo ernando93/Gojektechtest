@@ -23,6 +23,7 @@ class HomeViewController: UIViewController {
 
 //MARK: - Setup View
 extension HomeViewController {
+    
     func setupViewContent() {
         
         setupTableView(in: tableView)
@@ -41,6 +42,7 @@ extension HomeViewController {
 
 //MARK: - TableView Delegate & DataSource
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1

@@ -24,11 +24,13 @@
 		9E0890D3232D270600B82F82 /* DetailContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0890D2232D270600B82F82 /* DetailContactViewController.swift */; };
 		9E0890D7232D273300B82F82 /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0890D6232D273300B82F82 /* EditContactViewController.swift */; };
 		9E0890DF232D2ED700B82F82 /* DetailHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0890DE232D2ED700B82F82 /* DetailHeaderTableViewCell.swift */; };
-		9E0890E1232D2EE900B82F82 /* DetailEmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0890E0232D2EE900B82F82 /* DetailEmailTableViewCell.swift */; };
-		9E0890E3232D2EFA00B82F82 /* DetailMobileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0890E2232D2EFA00B82F82 /* DetailMobileTableViewCell.swift */; };
 		9E0890E7232D48BE00B82F82 /* ListContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0890E5232D48BD00B82F82 /* ListContactTableViewCell.swift */; };
 		9E0890E8232D48BE00B82F82 /* ListContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0890E6232D48BD00B82F82 /* ListContactTableViewCell.xib */; };
 		9E0890EA232D4A3E00B82F82 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0890E9232D4A3E00B82F82 /* HomeViewController.swift */; };
+		9EAABB2C232D5CB70006E572 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB2B232D5CB70006E572 /* Extension.swift */; };
+		9EAABB30232D62500006E572 /* EditHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB2F232D62500006E572 /* EditHeaderTableViewCell.swift */; };
+		9EAABB37232D69FC0006E572 /* DetailContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB36232D69FC0006E572 /* DetailContactTableViewCell.swift */; };
+		9EAABB39232D6CAC0006E572 /* EditContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB38232D6CAC0006E572 /* EditContactTableViewCell.swift */; };
 		A771479C06AB31CDE759856F /* Pods_Gojektechtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875DC822F7701DEF136BAA58 /* Pods_Gojektechtest.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,11 +78,13 @@
 		9E0890D2232D270600B82F82 /* DetailContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactViewController.swift; sourceTree = "<group>"; };
 		9E0890D6232D273300B82F82 /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
 		9E0890DE232D2ED700B82F82 /* DetailHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderTableViewCell.swift; sourceTree = "<group>"; };
-		9E0890E0232D2EE900B82F82 /* DetailEmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEmailTableViewCell.swift; sourceTree = "<group>"; };
-		9E0890E2232D2EFA00B82F82 /* DetailMobileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMobileTableViewCell.swift; sourceTree = "<group>"; };
 		9E0890E5232D48BD00B82F82 /* ListContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContactTableViewCell.swift; sourceTree = "<group>"; };
 		9E0890E6232D48BD00B82F82 /* ListContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListContactTableViewCell.xib; sourceTree = "<group>"; };
 		9E0890E9232D4A3E00B82F82 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9EAABB2B232D5CB70006E572 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		9EAABB2F232D62500006E572 /* EditHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		9EAABB36232D69FC0006E572 /* DetailContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactTableViewCell.swift; sourceTree = "<group>"; };
+		9EAABB38232D6CAC0006E572 /* EditContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactTableViewCell.swift; sourceTree = "<group>"; };
 		B37E36CD19831E2F51B41F60 /* Pods-GojektechtestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GojektechtestUITests.release.xcconfig"; path = "Target Support Files/Pods-GojektechtestUITests/Pods-GojektechtestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D56C31B928CBD160EAA8418E /* Pods-Gojektechtest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gojektechtest.release.xcconfig"; path = "Target Support Files/Pods-Gojektechtest/Pods-Gojektechtest.release.xcconfig"; sourceTree = "<group>"; };
 		E6AE6E619B87FC219A553C73 /* Pods-GojektechtestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GojektechtestUITests.debug.xcconfig"; path = "Target Support Files/Pods-GojektechtestUITests/Pods-GojektechtestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,11 +167,13 @@
 		9E089071232D180100B82F82 /* Gojektechtest */ = {
 			isa = PBXGroup;
 			children = (
-				9E0890D8232D2DD400B82F82 /* ViewCell */,
-				9E0890D1232D26BD00B82F82 /* ViewController */,
+				9EAABB2A232D5C610006E572 /* Utils */,
+				9E0890EC232D513C00B82F82 /* Models */,
+				9E0890EB232D50CC00B82F82 /* Storyboard */,
+				9E0890D8232D2DD400B82F82 /* ViewCells */,
+				9E0890D1232D26BD00B82F82 /* ViewControllers */,
 				9E0890A0232D217B00B82F82 /* Font */,
 				9E089072232D180100B82F82 /* AppDelegate.swift */,
-				9E089076232D180100B82F82 /* Main.storyboard */,
 				9E089079232D180200B82F82 /* Assets.xcassets */,
 				9E08907B232D180200B82F82 /* LaunchScreen.storyboard */,
 				9E08907E232D180200B82F82 /* Info.plist */,
@@ -206,32 +212,31 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		9E0890D1232D26BD00B82F82 /* ViewController */ = {
+		9E0890D1232D26BD00B82F82 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				9E0890E9232D4A3E00B82F82 /* HomeViewController.swift */,
 				9E0890D2232D270600B82F82 /* DetailContactViewController.swift */,
 				9E0890D6232D273300B82F82 /* EditContactViewController.swift */,
 			);
-			path = ViewController;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		9E0890D8232D2DD400B82F82 /* ViewCell */ = {
+		9E0890D8232D2DD400B82F82 /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
 				9E0890E4232D48A100B82F82 /* List Cell */,
-				9E0890DA232D2E7A00B82F82 /* Edit Cell */,
 				9E0890D9232D2E6700B82F82 /* Detail Cell */,
+				9E0890DA232D2E7A00B82F82 /* Edit Cell */,
 			);
-			path = ViewCell;
+			path = ViewCells;
 			sourceTree = "<group>";
 		};
 		9E0890D9232D2E6700B82F82 /* Detail Cell */ = {
 			isa = PBXGroup;
 			children = (
 				9E0890DE232D2ED700B82F82 /* DetailHeaderTableViewCell.swift */,
-				9E0890E2232D2EFA00B82F82 /* DetailMobileTableViewCell.swift */,
-				9E0890E0232D2EE900B82F82 /* DetailEmailTableViewCell.swift */,
+				9EAABB36232D69FC0006E572 /* DetailContactTableViewCell.swift */,
 			);
 			path = "Detail Cell";
 			sourceTree = "<group>";
@@ -239,6 +244,8 @@
 		9E0890DA232D2E7A00B82F82 /* Edit Cell */ = {
 			isa = PBXGroup;
 			children = (
+				9EAABB2F232D62500006E572 /* EditHeaderTableViewCell.swift */,
+				9EAABB38232D6CAC0006E572 /* EditContactTableViewCell.swift */,
 			);
 			path = "Edit Cell";
 			sourceTree = "<group>";
@@ -250,6 +257,29 @@
 				9E0890E6232D48BD00B82F82 /* ListContactTableViewCell.xib */,
 			);
 			path = "List Cell";
+			sourceTree = "<group>";
+		};
+		9E0890EB232D50CC00B82F82 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9E089076232D180100B82F82 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9E0890EC232D513C00B82F82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9EAABB2A232D5C610006E572 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9EAABB2B232D5CB70006E572 /* Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,14 +517,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E0890E3232D2EFA00B82F82 /* DetailMobileTableViewCell.swift in Sources */,
+				9EAABB30232D62500006E572 /* EditHeaderTableViewCell.swift in Sources */,
+				9EAABB2C232D5CB70006E572 /* Extension.swift in Sources */,
 				9E0890DF232D2ED700B82F82 /* DetailHeaderTableViewCell.swift in Sources */,
 				9E0890D3232D270600B82F82 /* DetailContactViewController.swift in Sources */,
 				9E0890E7232D48BE00B82F82 /* ListContactTableViewCell.swift in Sources */,
 				9E0890EA232D4A3E00B82F82 /* HomeViewController.swift in Sources */,
-				9E0890E1232D2EE900B82F82 /* DetailEmailTableViewCell.swift in Sources */,
 				9E089073232D180100B82F82 /* AppDelegate.swift in Sources */,
+				9EAABB37232D69FC0006E572 /* DetailContactTableViewCell.swift in Sources */,
 				9E0890D7232D273300B82F82 /* EditContactViewController.swift in Sources */,
+				9EAABB39232D6CAC0006E572 /* EditContactTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

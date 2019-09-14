@@ -37,6 +37,7 @@ class DetailContactViewController: UIViewController {
 
 //MARK: - Setup View
 extension DetailContactViewController {
+    
     func setupViewContent() {
         
         setupTableView(in: tableView)
@@ -53,6 +54,7 @@ extension DetailContactViewController {
 
 //MARK: - TableView Delegate & DataSource
 extension DetailContactViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
@@ -76,9 +78,7 @@ extension DetailContactViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        switch indexPath.row {
-            
-        case 0:
+        if indexPath.row == 0 {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as? DetailHeaderTableViewCell
             
@@ -86,23 +86,27 @@ extension DetailContactViewController: UITableViewDelegate, UITableViewDataSourc
             cell?.configureCell()
             
             return cell ?? UITableViewCell()
-        case 1:
+        } else {
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: "mobileCell", for: indexPath) as? DetailMobileTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "contactCells", for: indexPath) as? DetailContactTableViewCell
             
-            cell?.configureCell()
-            
-            return cell ?? UITableViewCell()
-        case 2:
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: "emailCell", for: indexPath) as? DetailEmailTableViewCell
-            
-            cell?.configureCell()
+            cell?.configureCell(with: indexPath.row)
             
             return cell ?? UITableViewCell()
-        default:
-            
-            return UITableViewCell()
         }
+    }
+}
+
+//MARK: - Action
+extension DetailContactViewController {
+    
+    @IBAction func buttonEditTapped(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "EditContactVC", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+//        let editVc = segue.destination as? EditContactViewController
     }
 }
