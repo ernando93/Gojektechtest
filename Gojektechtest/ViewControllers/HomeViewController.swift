@@ -13,11 +13,15 @@ class HomeViewController: UIViewController {
     var list: [Contact] = []
     @IBOutlet weak var tableView: UITableView!
     
+    var labelLoading = UILabel()
+    var spinner = UIActivityIndicatorView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationController?.navigationBar.tintColor = UIColor(red: 80.0/255.0, green: 227.0/255.0, blue: 194.0/255.0, alpha: 1.0)
         setupViewContent()
+        tableView.setLoadingScreen(with: spinner, loadingLabel: labelLoading, viewController: self)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -57,6 +61,7 @@ extension HomeViewController {
             case .success(let response):
                 
                 self.list = response.list
+                self.tableView.removeLoadingScreen(with: self.spinner, loadingLabel: self.labelLoading)
                 self.tableView.reloadData()
             case .failure(let failed):
                 

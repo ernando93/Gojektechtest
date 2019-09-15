@@ -13,6 +13,9 @@ class DetailContactViewController: UIViewController {
     var contact: Contact?
     @IBOutlet weak var tableView: UITableView!
     
+    var labelLoading = UILabel()
+    var spinner = UIActivityIndicatorView()
+    
     var contactId: Int = 0
     
     override func viewDidLoad() {
@@ -29,6 +32,7 @@ class DetailContactViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
         
+        tableView.setLoadingScreen(with: spinner, loadingLabel: labelLoading, viewController: self)
         requestDetailContact(with: contactId)
     }
     
@@ -68,9 +72,11 @@ extension DetailContactViewController {
             case .success(let response):
                 
                 self.contact = response
+                self.tableView.removeLoadingScreen(with: self.spinner, loadingLabel: self.labelLoading)
                 self.tableView.reloadData()
             case .failure(let error):
                 
+                self.tableView.removeLoadingScreen(with: self.spinner, loadingLabel: self.labelLoading)
                 print(error)
             }
         }
@@ -109,6 +115,7 @@ extension DetailContactViewController: UITableViewDelegate, UITableViewDataSourc
             
             cell?.separatorInset = .zero
             if contact != nil {
+                
                 cell?.configureCell(with: contact!)
             }
             
@@ -118,6 +125,7 @@ extension DetailContactViewController: UITableViewDelegate, UITableViewDataSourc
             let cell = tableView.dequeueReusableCell(withIdentifier: "contactCells", for: indexPath) as? DetailContactTableViewCell
             
             if contact != nil {
+                
                 cell?.configureCell(with: contact!, row: indexPath.row)
             }
             
@@ -131,11 +139,15 @@ extension DetailContactViewController {
     
     @IBAction func buttonEditTapped(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "EditContactVC", sender: self)
+        if contact != nil {
+            
+            performSegue(withIdentifier: "EditContactVC", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-//        let editVc = segue.destination as? EditContactViewController
+        let editVc = segue.destination as? EditContactViewController
+        editVc?.contact = contact
     }
 }

@@ -27,6 +27,7 @@
 		9E0890E7232D48BE00B82F82 /* ListContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0890E5232D48BD00B82F82 /* ListContactTableViewCell.swift */; };
 		9E0890E8232D48BE00B82F82 /* ListContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0890E6232D48BD00B82F82 /* ListContactTableViewCell.xib */; };
 		9E0890EA232D4A3E00B82F82 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0890E9232D4A3E00B82F82 /* HomeViewController.swift */; };
+		9EA63A72232E0E0A00AFA83A /* EditRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA63A71232E0E0A00AFA83A /* EditRequest.swift */; };
 		9EAABB2C232D5CB70006E572 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB2B232D5CB70006E572 /* Extension.swift */; };
 		9EAABB30232D62500006E572 /* EditHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB2F232D62500006E572 /* EditHeaderTableViewCell.swift */; };
 		9EAABB37232D69FC0006E572 /* DetailContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAABB36232D69FC0006E572 /* DetailContactTableViewCell.swift */; };
@@ -89,6 +90,7 @@
 		9E0890E5232D48BD00B82F82 /* ListContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContactTableViewCell.swift; sourceTree = "<group>"; };
 		9E0890E6232D48BD00B82F82 /* ListContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListContactTableViewCell.xib; sourceTree = "<group>"; };
 		9E0890E9232D4A3E00B82F82 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9EA63A71232E0E0A00AFA83A /* EditRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRequest.swift; sourceTree = "<group>"; };
 		9EAABB2B232D5CB70006E572 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		9EAABB2F232D62500006E572 /* EditHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		9EAABB36232D69FC0006E572 /* DetailContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactTableViewCell.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 			children = (
 				9EAABB4D232D74D70006E572 /* ListRequest.swift */,
 				9EAABB51232D805A0006E572 /* DetailRequest.swift */,
+				9EA63A71232E0E0A00AFA83A /* EditRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EAABB30232D62500006E572 /* EditHeaderTableViewCell.swift in Sources */,
+				9EA63A72232E0E0A00AFA83A /* EditRequest.swift in Sources */,
 				9EAABB50232D751A0006E572 /* Constant.swift in Sources */,
 				9EAABB4E232D74D70006E572 /* ListRequest.swift in Sources */,
 				9EAABB45232D6FD80006E572 /* Request.swift in Sources */,

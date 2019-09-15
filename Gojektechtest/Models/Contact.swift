@@ -117,4 +117,26 @@ extension Contact {
             }
         }
     }
+    
+    static func editDetails(withId id: Int,
+                                    withFirstName firstName: String,
+                                    withLastName lastName: String,
+                                    withPhoneNumber phoneNumber: String,
+                                    andEmail email: String,
+                                    completionHandler: @escaping(ContactResult) -> Void) {
+        EditRequest(id: id, firstName: firstName, lastName: lastName, phoneNumber: phoneNumber, email: email).send() { result in
+            
+            switch result {
+                
+            case .success(let response):
+                if let update = response.resultData {
+                    completionHandler(.success(update))
+                } else {
+                    completionHandler(.failure(RequestError.invalidReturnedJSON))
+                }
+            case .failure(let error):
+                completionHandler(.failure(error))
+            }
+        }
+    }
 }
